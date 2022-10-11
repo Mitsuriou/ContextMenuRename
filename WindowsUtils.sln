@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32922.545
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContextMenuRename", "ContextMenuRename\ContextMenuRename.csproj", "{8CA2D161-1E29-467B-B734-1E3AED47FA1C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8CA2D161-1E29-467B-B734-1E3AED47FA1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CA2D161-1E29-467B-B734-1E3AED47FA1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CA2D161-1E29-467B-B734-1E3AED47FA1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CA2D161-1E29-467B-B734-1E3AED47FA1C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B19E57AB-F9C7-4610-8DB0-265C4F6275C8}
+	EndGlobalSection
+EndGlobal

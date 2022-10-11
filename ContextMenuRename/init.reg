@@ -1,0 +1,23 @@
+Windows Registry Editor Version 5.00
+
+; Main menu
+[HKEY_CLASSES_ROOT\*\shell\rename-utils]
+"MUIVerb"="Rename utils"
+;"Icon"="C:\path\to\icon.ico"
+"ExtendedSubCommandsKey"="*\\ContextMenus\\rename-utils"
+
+; Submenu: random GUID
+[HKEY_CLASSES_ROOT\*\ContextMenus\rename-utils\Shell\random-guid]
+"MUIVerb"="Random GUID"
+;"Icon"="C:\path\to\icon.ico"
+
+[HKEY_CLASSES_ROOT\*\ContextMenus\rename-utils\Shell\random-guid\command]
+@="C:\\WindowsUtils\\ContextMenuRename.exe \"%1\" 1"
+
+; Submenu: X
+;[HKEY_CLASSES_ROOT\*\ContextMenus\rename-utils\Shell\X]
+;"MUIVerb"="Name of X submenu"
+;"Icon"="C:\path\to\icon.ico"
+;
+;[HKEY_CLASSES_ROOT\*\ContextMenus\rename-utils\Shell\X\command]
+;@="C:\\WindowsUtils\\ContextMenuRename.exe \"%1\" 2"
