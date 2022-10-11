@@ -6,7 +6,7 @@ Windows Registry Editor Version 5.00
 ;"Icon"="C:\path\to\icon.ico"
 "ExtendedSubCommandsKey"="*\\ContextMenus\\rename-utils"
 
-; Submenu: random GUID
+; Sub menu: random GUID
 [HKEY_CLASSES_ROOT\*\ContextMenus\rename-utils\Shell\random-guid]
 "MUIVerb"="Random GUID"
 ;"Icon"="C:\path\to\icon.ico"

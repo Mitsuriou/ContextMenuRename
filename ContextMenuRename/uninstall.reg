@@ -1,0 +1,6 @@
+Windows Registry Editor Version 5.00
+
+; Main menu
+[-HKEY_CLASSES_ROOT\*\shell\rename-utils]
+; Submenus
+[-HKEY_CLASSES_ROOT\*\ContextMenus\rename-utils]
