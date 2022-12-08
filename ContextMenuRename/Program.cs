@@ -12,9 +12,6 @@ namespace ContextMenuRename
             RandomGUID,
             PrependRandomGUID,
             AppendRandomGUID,
-            RandomGUIDSameForAllFiles,
-            PrependRandomGUIDSameForAllFiles,
-            AppendRandomGUIDSameForAllFiles,
         }
 
         static void Main(string[] args)
@@ -63,15 +60,6 @@ namespace ContextMenuRename
                         System.Environment.Exit(1);
 
                     RenameFileAppendRandomGUID(fileNames.First(), GenerateGUID());
-                    break;
-                case MODULE.RandomGUIDSameForAllFiles:
-                    RenameFileRandomGUIDSameForAllFiles(fileNames);
-                    break;
-                case MODULE.PrependRandomGUIDSameForAllFiles:
-                    RenameFilePrependRandomGUIDSameForAllFiles(fileNames);
-                    break;
-                case MODULE.AppendRandomGUIDSameForAllFiles:
-                    RenameFileAppendRandomGUIDSameForAllFiles(fileNames);
                     break;
             }
 
@@ -125,31 +113,6 @@ namespace ContextMenuRename
             );
 
             return true;
-        }
-
-        static void RenameFileRandomGUIDSameForAllFiles(in string[] sourceFiles)
-        {
-            var commonGUID = GenerateGUID();
-
-            foreach (var sourceFile in sourceFiles)
-            {
-                RenameFileRandomGUID(sourceFile, commonGUID);
-            }
-        }
-
-        static void RenameFilePrependRandomGUIDSameForAllFiles(in string[] sourceFiles)
-        {
-            var commonGUID = GenerateGUID();
-
-            foreach (var sourceFile in sourceFiles)
-                RenameFilePrependRandomGUID(sourceFile, commonGUID);
-        }
-
-        static void RenameFileAppendRandomGUIDSameForAllFiles(in string[] sourceFiles)
-        {
-            var commonGUID = GenerateGUID();
-            foreach (var sourceFile in sourceFiles)
-                RenameFileAppendRandomGUID(sourceFile, commonGUID);
         }
 
         static string GenerateGUID()

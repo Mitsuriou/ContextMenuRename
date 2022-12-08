@@ -30,30 +30,6 @@ Windows Registry Editor Version 5.00
 [HKEY_CLASSES_ROOT\*\ContextMenus\rename-utils\Shell\append-random-guid\command]
 @="C:\\WindowsUtils\\ContextMenuRename.exe 3 \"%1\""
 
-; Sub menu: random GUID (same for all)
-[HKEY_CLASSES_ROOT\*\ContextMenus\rename-utils\Shell\random-guid-same-for-all]
-"MUIVerb"="Random GUID (same for all)"
-;"Icon"="C:\path\to\icon.ico"
-
-[HKEY_CLASSES_ROOT\*\ContextMenus\rename-utils\Shell\random-guid-same-for-all\command]
-@="C:\\WindowsUtils\\ContextMenuRename.exe 4 \"%1\""
-
-; Sub menu: preprend random GUID (same for all)
-[HKEY_CLASSES_ROOT\*\ContextMenus\rename-utils\Shell\preprend-random-guid-same-for-all]
-"MUIVerb"="Prepend random GUID (same for all)"
-;"Icon"="C:\path\to\icon.ico"
-
-[HKEY_CLASSES_ROOT\*\ContextMenus\rename-utils\Shell\preprend-random-guid-same-for-all\command]
-@="C:\\WindowsUtils\\ContextMenuRename.exe 5 \"%1\""
-
-; Sub menu: append random GUID (same for all)
-[HKEY_CLASSES_ROOT\*\ContextMenus\rename-utils\Shell\append-random-guid-same-for-all]
-"MUIVerb"="Append random GUID (same for all)"
-;"Icon"="C:\path\to\icon.ico"
-
-[HKEY_CLASSES_ROOT\*\ContextMenus\rename-utils\Shell\append-random-guid-same-for-all\command]
-@="C:\\WindowsUtils\\ContextMenuRename.exe 6 \"%1\""
-
 ; Submenu: X
 ;[HKEY_CLASSES_ROOT\*\ContextMenus\rename-utils\Shell\X]
 ;"MUIVerb"="Name of X submenu"
